@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the HomePage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { IonicPage } from 'ionic-angular';
+import { AngularFireDatabase } from '@angular/fire/database';
 
 @IonicPage()
 @Component({
@@ -15,11 +9,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private db: AngularFireDatabase) {
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad HomePage');
+
+    this.db.list('users').valueChanges()
+      .subscribe((data) => console.log(data));
   }
 
 }
