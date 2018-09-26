@@ -11,6 +11,7 @@
     "lint": "ionic-app-scripts lint"
   },
   "dependencies": {
+    "@angular-devkit/build-optimizer": "^0.8.3",
     "@angular/animations": "5.2.11",
     "@angular/common": "5.2.11",
     "@angular/compiler": "5.2.11",

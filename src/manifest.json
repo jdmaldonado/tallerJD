@@ -1,6 +1,6 @@
 {
-  "name": "Ionic",
-  "short_name": "Ionic",
+  "name": "A small JD workshop",
+  "short_name": "Taller JD",
   "start_url": "index.html",
   "display": "standalone",
   "icons": [{
@@ -9,5 +9,6 @@
     "type": "image/png"
   }],
   "background_color": "#4e8ef7",
-  "theme_color": "#4e8ef7"
+  "theme_color": "#4e8ef7",
+  "gcm_sender_id": "482941778795"
 }
